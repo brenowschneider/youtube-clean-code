@@ -63,7 +63,7 @@ const updateCatalog = (products: Product[]) : Product[] => {
         if (product) {
             if (products[i].price > product.price) {
                 // update product
-                catalog[catalog.indexOf(product)] = products[i]
+                catalog[catalog.indexOf(product)] = products[i];
             }
         } else {
             if (products[i].price > 0) {
